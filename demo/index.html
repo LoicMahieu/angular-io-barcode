@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>angular-io-barcode</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="../build/angular-io-barcode.js"></script>
+    <script>
+
+      angular.module('demoApp', [
+        'angular-io-barcode'
+      ])
+        .controller('DemoCtrl', function ($scope, IO_BARCODE_TYPES) {
+          $scope.types = IO_BARCODE_TYPES
+          $scope.code = '1234567890128'
+          $scope.type = 'CODE128B'
+
+          $scope.options = {
+            width: 3,
+            height: 100,
+            displayValue: true,
+            font: 'monospace',
+            textAlign: 'center',
+            fontSize: 15,
+            backgroundColor: '#0c9195',
+            lineColor: '#faed3b'
+          }
+        })
+
+    </script>
+  </head>
+  <body ng-app="demoApp">
+
+    <h1>Dynamic</h1>
+
+    <div ng-controller="DemoCtrl">
+      <io-barcode code="{{ code }}" type="{{ type }}" options="options"></io-barcode>
+      <br />
+      <input ng-model="code" />
+      <select ng-model="type" ng-options="type for type in types"></select>
+      <pre>
+{
+  "width": <input ng-model="options.width" type="number" />,
+  "height": <input ng-model="options.height" type="number" />,
+  "displayValue": <select ng-model="options.displayValue" ng-options="bool for bool in [true, false]"></select>,
+  "font": <input ng-model="options.font" />,
+  "textAlign": <select ng-model="options.textAlign" ng-options="align for align in ['left', 'center', 'right']"></select>,
+  "fontSize": <input ng-model="options.fontSize" type="number" />,
+  "backgroundColor": <input ng-model="options.backgroundColor" type="color" />,
+  "lineColor": <input ng-model="options.lineColor" type="color" />
+}
+      </pre>
+    </div>
+
+    <hr />
+
+    <h2>UPC</h2>
+    <io-barcode code="123456789999" type="UPC"></io-barcode>
+    <h2>EAN</h2>
+    <io-barcode code="1234567890128" type="EAN"></io-barcode>
+    <h2>ITF</h2>
+    <io-barcode code="123456" type="ITF"></io-barcode>
+    <h2>ITF14</h2>
+    <io-barcode code="10012345000017" type="ITF14"></io-barcode>
+    <h2>CODE39</h2>
+    <io-barcode code="JSBARCODE" type="CODE39"></io-barcode>
+    <h2>CODE128B</h2>
+    <io-barcode code="JsBarcode" type="CODE128B"></io-barcode>
+    <h2>CODE128C</h2>
+    <io-barcode code="JcB" type="CODE128C"></io-barcode>
+    <h2>Pharmacode</h2>
+    <io-barcode code="1234" type="Pharmacode"></io-barcode>
+
+  </body>
+</html>
