@@ -17,15 +17,27 @@
   "homepage": "https://github.com/loicmahieu/angular-io-barcode",
   "bugs": "https://github.com/loicmahieu/angular-io-barcode/issues",
   "devDependencies": {
+    "angular-mocks": "^1.4.0",
+    "chai": "^2.3.0",
     "eslint": "^0.22.1",
+    "jasmine": "^2.3.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.35",
+    "karma-chai": "^0.1.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-spec-reporter": "0.0.19",
+    "karma-webpack": "^1.5.1",
+    "phantomjs": "^1.9.17",
     "serve": "^1.4.0",
     "standard": "^4.0.1",
     "webpack": "^1.9.10"
   },
   "scripts": {
+    "test": "npm run lint && karma start karma.conf.js",
     "demo": "npm run build-browser && echo 'Visit http://localhost:3000/demo' && serve",
     "build-browser": "rm -rf build && webpack lib/angular-barcode-io.js build/angular-io-barcode.js && NODE_ENV=production webpack lib/angular-barcode-io.js build/angular-io-barcode.min.js && echo \"gzipped, the global build is `gzip -c build/angular-io-barcode.min.js | wc -c` bytes\"",
-    "lint": "standard lib/*"
+    "lint": "standard lib/* test/* *.js"
   },
   "dependencies": {
     "angular": "^1.4.0",
