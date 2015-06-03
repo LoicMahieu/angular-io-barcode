@@ -9,7 +9,7 @@
     "io-barcode",
     "barcode"
   ],
-  "main": "lib/angular-barcode-io.js",
+  "main": "lib/angular-io-barcode.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/loicmahieu/angular-io-barcode.git"
@@ -36,7 +36,7 @@
   "scripts": {
     "test": "npm run lint && karma start karma.conf.js",
     "demo": "npm run build-browser && echo 'Visit http://localhost:3000/demo' && serve",
-    "build-browser": "rm -rf build && webpack lib/angular-barcode-io.js build/angular-io-barcode.js && NODE_ENV=production webpack lib/angular-barcode-io.js build/angular-io-barcode.min.js && echo \"gzipped, the global build is `gzip -c build/angular-io-barcode.min.js | wc -c` bytes\"",
+    "build-browser": "rm -rf build && webpack lib/angular-io-barcode.js build/angular-io-barcode.js && NODE_ENV=production webpack lib/angular-io-barcode.js build/angular-io-barcode.min.js && echo \"gzipped, the global build is `gzip -c build/angular-io-barcode.min.js | wc -c` bytes\"",
     "lint": "standard lib/* test/* *.js"
   },
   "dependencies": {

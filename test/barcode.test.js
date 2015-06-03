@@ -10,7 +10,7 @@ describe('Angular IO Barcode', function () {
   var $compile,
       $rootScope
 
-  beforeEach(module(require('../lib/angular-barcode-io').name))
+  beforeEach(module(require('../lib/angular-io-barcode').name))
 
   beforeEach(inject(function (_$compile_, _$rootScope_) {
     $compile = _$compile_
