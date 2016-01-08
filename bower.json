@@ -24,7 +24,9 @@
     "test",
     "tests",
     "demo",
-    "lib"
+    "lib",
+    "webpack.config.js",
+    "karma.conf.js"
   ],
   "dependencies": {
     "angular": "~1.4.8"
