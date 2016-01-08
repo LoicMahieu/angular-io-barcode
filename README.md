@@ -12,6 +12,7 @@ Angular wrapper for [io-barcode](https://www.npmjs.com/package/io-barcode)
 Install from:
 
 - NPM: `npm install angular-io-barcode`
+- Bower: `bower install angular-io-barcode`
 
 ```javascript
 var app = angular.module('app', ['io-barcode']);
@@ -30,7 +31,3 @@ $ git clone https://github.com/LoicMahieu/angular-io-barcode && cd angular-io-ba
 $ npm install
 $ npm test
 ```
-
-## Todo
-
-- Bower publish: `build/angular-io-barcode.js` is ready to be used in browser environment.
