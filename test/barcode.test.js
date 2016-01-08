@@ -7,8 +7,8 @@ require('angular-mocks')
 var module = window.module
 
 describe('Angular IO Barcode', function () {
-  var $compile,
-      $rootScope
+  var $compile
+  var $rootScope
 
   beforeEach(module(require('../lib/angular-io-barcode').name))
 
@@ -55,5 +55,4 @@ describe('Angular IO Barcode', function () {
     $rootScope.$digest()
     expect(element.attr('src')).toEqual('CODE128C-456')
   })
-
 })
