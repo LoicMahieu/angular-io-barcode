@@ -1,4 +1,4 @@
-/*global describe, it, beforeEach, expect, inject*/
+/* global describe, it, beforeEach, expect, inject */
 
 var angular = require('angular')
 window.angular = angular
