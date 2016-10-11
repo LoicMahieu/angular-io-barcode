@@ -30,7 +30,7 @@
     "karma-webpack": "^1.7.0",
     "phantomjs": "^2.1.7",
     "serve": "^1.4.0",
-    "standard": "^8.3.0",
+    "standard": "^8.4.0",
     "webpack": "^1.12.10"
   },
   "scripts": {
