@@ -1,5 +1,7 @@
 # Angular IO Barcode
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LoicMahieu/angular-io-barcode.svg)](https://greenkeeper.io/)
+
 Angular wrapper for [io-barcode](https://www.npmjs.com/package/io-barcode)
 
 [![Build Status](http://img.shields.io/travis/LoicMahieu/angular-io-barcode.svg?style=flat-square)](https://travis-ci.org/LoicMahieu/angular-io-barcode)
