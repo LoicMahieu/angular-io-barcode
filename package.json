@@ -26,10 +26,10 @@
     "karma-chai": "^0.1.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
-    "karma-spec-reporter": "0.0.27",
+    "karma-spec-reporter": "0.0.29",
     "karma-webpack": "^2.0.1",
     "phantomjs": "^2.1.7",
-    "serve": "^3.0.0",
+    "serve": "^4.0.0",
     "standard": "^9.0.0",
     "webpack": "^1.12.10"
   },
