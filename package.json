@@ -18,7 +18,7 @@
   "bugs": "https://github.com/loicmahieu/angular-io-barcode/issues",
   "devDependencies": {
     "angular-mocks": "^1.6.4",
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "eslint": "^3.19.0",
     "jasmine": "^2.6.0",
     "jasmine-core": "^2.6.0",
