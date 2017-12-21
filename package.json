@@ -22,7 +22,7 @@
     "eslint": "^4.3.0",
     "jasmine": "^2.6.0",
     "jasmine-core": "^2.6.0",
-    "karma": "^1.6.0",
+    "karma": "^2.0.0",
     "karma-chai": "^0.1.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
