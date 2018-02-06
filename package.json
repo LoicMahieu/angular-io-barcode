@@ -20,7 +20,7 @@
     "angular-mocks": "^1.6.4",
     "chai": "^4.0.1",
     "eslint": "^4.3.0",
-    "jasmine": "^2.6.0",
+    "jasmine": "^3.0.0",
     "jasmine-core": "^2.6.0",
     "karma": "^1.6.0",
     "karma-chai": "^0.1.0",
