@@ -1,7 +1,6 @@
 .gitignore
 .travis.yml
 test/
-build/
 demo/
 karma.conf.js
 webpack.config.js
